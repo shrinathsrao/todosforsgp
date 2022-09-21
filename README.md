@@ -1,6 +1,6 @@
 # todosforsgp
 
-Pre-requisites to run the code : Eclipse (Or any similar IDE), Java installed on the system, Cucumber Eclipse Plugin (Or any other similar plugin for other IDEs)
+Pre-requisites to run the code : Eclipse (Or any similar IDE), Selenium WebDriver, Java installed on the system, Cucumber Eclipse Plugin (Or any other similar plugin for other IDEs)
 
 How to run the code: 
 1) Navigate to "\src\test\java\stepDefinitions" and find the file "TestRunner.java". This is your test runner file which will be used to run the test cases.
@@ -21,7 +21,7 @@ However, for proper HTML Reports, it is recommended to run as a JUnit test.
 
 Possible reasons for build/execution failure:
 1) I have used Chrome and Edge drivers ("\src\test\resources\drivers") for cross-browser testing. Please ensure that the drivers for these two are consistent with the browser versions your system is running.
-2) If you get an external gherkins build error, then try and execute as a JUnit test the second time, it will probably work the second time.
+2) If you get this error - Errors running builder 'Integrated External Tool Builder', then try and execute as a JUnit test the second time, it will probably work the second time. If not, then go to Project > Properties > Builders. Here, you can remove the error causing builder.
 3) If the Maven dependencies have not been downloaded, please check pom.xml file and verify if there are no errors.
 
 
