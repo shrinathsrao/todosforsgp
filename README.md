@@ -11,12 +11,19 @@ How to run the code:
 Feature file ("\src\test\resources\Features") :
 This file contains the list of all scenarios that are being tested. Here is the list for your reference - 
 1 - Validate that User is able to add items to the to-do list.
+
 2 - Validate that User is able to edit the added items to the to-do list.
+
 3 - Validate that User is able to delete the added item from the to-do list.
+
 4 - Validate that User is able to check the added items as completed on the to-do list.
+
 5 - Validate that User is able to clear all the completed items on the to-do list.
+
 6 - Validate that User is able to view the appropriate values using filters on landing page of to-do list.
+
 Instead of running testRunner as a JUnit test, you can also run the feature file as a "Cucumber Feature". [Right click on feature file > Run As > Cucumber Feature].
+
 However, for proper HTML Reports, it is recommended to run as a JUnit test.
 
 Possible reasons for build/execution failure:
