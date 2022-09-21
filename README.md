@@ -10,6 +10,7 @@ How to run the code:
 
 Feature file ("\src\test\resources\Features") :
 This file contains the list of all scenarios that are being tested. Here is the list for your reference - 
+
 1 - Validate that User is able to add items to the to-do list.
 
 2 - Validate that User is able to edit the added items to the to-do list.
