@@ -100,9 +100,7 @@ public class todoListLandingPage {
 		String[] inputValues = text.split(",");
 		Actions act = new Actions(driver);
 		for (int i = 0; i < inputValues.length; i ++){
-			String temp = enteredTextPartialPath + (i+1) + "]";
-			By completeTextPath = By.xpath(temp);
-			WebElement ele = driver.findElement(completeTextPath);
+			WebElement ele = driver.findElement(By.xpath(enteredTextPartialPath + (i+1) + "]"));
 			act.doubleClick(ele).perform();
 			for (int j = 0; j < inputValues[i].length(); j ++){
 				act.sendKeys(ele,Keys.BACK_SPACE).perform();
@@ -124,9 +122,7 @@ public class todoListLandingPage {
 			for (int i = 0; i < completedValuesArr.length; i ++){
 				for (int j = 0; j < allValuesArr.length; j ++){
 					if (completedValuesArr[i].equals(allValuesArr[j])){
-						String temp = tempPartialXpath + completedValuesArr[i] + "')]/../input";
-						By completeTextPath = By.xpath(temp);
-						WebElement ele = driver.findElement(completeTextPath);
+						WebElement ele = driver.findElement(By.xpath(tempPartialXpath + completedValuesArr[i] + "')]/../input"));
 						ele.click();
 					}
 				}
@@ -139,9 +135,7 @@ public class todoListLandingPage {
 		String[] inputValues = text.split(",");
 		Actions act = new Actions(driver);
 		for (int i = 0; i < inputValues.length; i ++){
-			String temp = enteredTextPartialPath + (i+1) + "]";
-			By completeTextPath = By.xpath(temp);
-			WebElement ele = driver.findElement(completeTextPath);
+			WebElement ele = driver.findElement(By.xpath(enteredTextPartialPath + (i+1) + "]"));
 			act.doubleClick(ele).perform();
 			for (int j = 0; j < inputValues[i].length(); j ++){
 				act.sendKeys(ele,Keys.BACK_SPACE).perform();
@@ -158,9 +152,7 @@ public class todoListLandingPage {
 		switch(filterType){
 		case "Completed": 	
 			for (int i = 0; i < completedValuesArr.length; i ++){
-				String temp = tempPartialXpath + completedValuesArr[i] + "')]/../..";
-				By completeTextPath = By.xpath(temp);
-				WebElement ele = driver.findElement(completeTextPath);
+				WebElement ele = driver.findElement(By.xpath(tempPartialXpath + completedValuesArr[i] + "')]/../.."));
 				if((ele.getAttribute("class")).equals("todo completed")){
 					System.out.println(completedValuesArr[i]+" marked as completed successfully");
 				}
@@ -173,9 +165,7 @@ public class todoListLandingPage {
 			for (int i = 0; i < allValuesArr.length; i ++){
 				for (int j = 0; j < completedValuesArr.length; j ++){
 					if (!(allValuesArr[i].equals(completedValuesArr[j]))){
-						String temp = tempPartialXpath + allValuesArr[i] + "')]/../..";
-						By completeTextPath = By.xpath(temp);
-						WebElement ele = driver.findElement(completeTextPath);
+						WebElement ele = driver.findElement(By.xpath(tempPartialXpath + allValuesArr[i] + "')]/../.."));
 						if((ele.getAttribute("class")).equals("todo")){
 							System.out.println(allValuesArr[i]+" is visible in Active tasks as expected");
 						}
@@ -195,9 +185,7 @@ public class todoListLandingPage {
 		String[] completedValuesArr = completedValues.split(",");
 		String[] allValuesArr = allValues.split(",");
 		int toVerify = allValuesArr.length - completedValuesArr.length;
-		String temp = tempPartialXpath + toVerify + "')]";
-		By completeTextPath = By.xpath(temp);
-		if (driver.findElement(completeTextPath).isDisplayed()){
+		if (driver.findElement(By.xpath(tempPartialXpath + toVerify + "')]")).isDisplayed()){
 			System.out.println("Item counter is displaying the right count - " + toVerify);
 		}
 		else{
@@ -222,10 +210,7 @@ public class todoListLandingPage {
 	public void verifyTextToDoList(String text){
 		String[] inputValues = text.split(",");
 		for (int i = 0; i < inputValues.length; i ++){
-
-			String temp = enteredTextPartialPath.toString() + (i+1) + "]/div/label";
-			By completeTextPath = By.xpath(temp);
-			if(driver.findElement(completeTextPath).getText().equals(inputValues[i])){
+			if(driver.findElement(By.xpath(enteredTextPartialPath.toString() + (i+1) + "]/div/label")).getText().equals(inputValues[i])){
 				System.out.println(inputValues[i]+" added successfully to the To-Do List");
 			}
 			else{
@@ -239,6 +224,4 @@ public class todoListLandingPage {
 		driver.close();
 		driver.quit();
 	}
-
-
 }

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="119.627">
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to add items to the to-do list" time="6.814">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="104.101">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to add items to the to-do list" time="7.629">
 <system-out><![CDATA[Given Web chrome is Open....................................................passed
 And User is on To-do list page..............................................passed
 When User enters Prepare Coffee,Go to Work,Wrap Up work,Sleep on Time in To-do list text box.passed
 Then User is able to see the entered Prepare Coffee,Go to Work,Wrap Up work,Sleep on Time in the To-Do list.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to add items to the to-do list 2" time="10.194">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to add items to the to-do list 2" time="9.366">
 <system-out><![CDATA[Given Web edge is Open......................................................passed
 And User is on To-do list page..............................................passed
 When User enters Meet Vishal,Submit Assignments,Play Chess in To-do list text box.passed
 Then User is able to see the entered Meet Vishal,Submit Assignments,Play Chess in the To-Do list.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to edit the added items to the to-do list" time="13.547">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to edit the added items to the to-do list" time="11.668">
 <system-out><![CDATA[Given Web chrome is Open....................................................passed
 And User is on To-do list page..............................................passed
 And User enters Play Cricket,Play football in To-do list text box...........passed
@@ -22,7 +22,7 @@ When User edits the existing Play Cricket,Play football with Do not play Cricket
 Then User is able to see the entered Do not play Cricket,Do not Play Football in the To-Do list.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to edit the added items to the to-do list 2" time="14.422">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to edit the added items to the to-do list 2" time="14.54">
 <system-out><![CDATA[Given Web edge is Open......................................................passed
 And User is on To-do list page..............................................passed
 And User enters Play Cricket,Play football in To-do list text box...........passed
@@ -30,7 +30,7 @@ When User edits the existing Play Cricket,Play football with Do not play Cricket
 Then User is able to see the entered Do not play Cricket,Do not Play Football in the To-Do list.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to delete the added item from the to-do list" time="7.761">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to delete the added item from the to-do list" time="7.335">
 <system-out><![CDATA[Given Web chrome is Open....................................................passed
 And User is on To-do list page..............................................passed
 And User enters Play Cricket in To-do list text box.........................passed
@@ -38,7 +38,7 @@ When User deletes an entry from existing Play Cricket.......................pass
 Then User is not able to see the deleted entry Play Cricket in the To-Do list.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to delete the added item from the to-do list 2" time="11.035">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to delete the added item from the to-do list 2" time="10.631">
 <system-out><![CDATA[Given Web edge is Open......................................................passed
 And User is on To-do list page..............................................passed
 And User enters Play Cricket in To-do list text box.........................passed
@@ -46,7 +46,7 @@ When User deletes an entry from existing Play Cricket.......................pass
 Then User is not able to see the deleted entry Play Cricket in the To-Do list.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to check the added items as completed on the to-do list" time="5.93">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to check the added items as completed on the to-do list" time="5.506">
 <system-out><![CDATA[Given Web chrome is Open....................................................passed
 And User is on To-do list page..............................................passed
 And User enters Play Cricket,Play Football,Play Hockey in To-do list text box.passed
@@ -55,7 +55,7 @@ Then Play Cricket,Play Football,Play Hockey value out of all the Play Cricket,Pl
 And items left counter reflects the changes caused by Play Cricket,Play Football,Play Hockey items out of all Play Cricket,Play Football,Play Hockey.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to check the added items as completed on the to-do list 2" time="9.117">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to check the added items as completed on the to-do list 2" time="9.111">
 <system-out><![CDATA[Given Web edge is Open......................................................passed
 And User is on To-do list page..............................................passed
 And User enters Play Cricket,Play Football,Play Hockey in To-do list text box.passed
@@ -64,7 +64,7 @@ Then Play Football value out of all the Play Cricket,Play Football,Play Hockey i
 And items left counter reflects the changes caused by Play Football items out of all Play Cricket,Play Football,Play Hockey.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to clear all the completed items on the to-do list" time="10.947">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to clear all the completed items on the to-do list" time="5.094">
 <system-out><![CDATA[Given Web chrome is Open....................................................passed
 And User is on To-do list page..............................................passed
 And User enters Play Cricket,Play Football,Play Hockey in To-do list text box.passed
@@ -73,7 +73,7 @@ When User clicks on Clear completed button..................................pass
 Then User is not able to see the deleted entry Play Cricket,Play Hockey in the To-Do list.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to clear all the completed items on the to-do list 2" time="14.296">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to clear all the completed items on the to-do list 2" time="8.299">
 <system-out><![CDATA[Given Web edge is Open......................................................passed
 And User is on To-do list page..............................................passed
 And User enters Play Cricket,Play Football,Play Hockey in To-do list text box.passed
@@ -82,7 +82,7 @@ When User clicks on Clear completed button..................................pass
 Then User is not able to see the deleted entry Play Football in the To-Do list.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to view the appropriate values using filters on landing page of to-do list" time="5.902">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to view the appropriate values using filters on landing page of to-do list" time="6.018">
 <system-out><![CDATA[Given Web chrome is Open....................................................passed
 And User is on To-do list page..............................................passed
 And User enters Play Cricket,Play Football,Play Hockey in To-do list text box.passed
@@ -91,7 +91,7 @@ When User clicks on Completed button........................................pass
 Then User only sees the Completed set of Play Cricket,Play Football,Play Hockey and Play Cricket,Play Hockey in the to-do list.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test Todo List Page" name="Validate that User is able to view the appropriate values using filters on landing page of to-do list 2" time="9.435">
+<testcase classname="Feature to test Todo List Page" name="Validate that User is able to view the appropriate values using filters on landing page of to-do list 2" time="8.658">
 <system-out><![CDATA[Given Web edge is Open......................................................passed
 And User is on To-do list page..............................................passed
 And User enters Play Cricket,Play Football,Play Hockey in To-do list text box.passed
