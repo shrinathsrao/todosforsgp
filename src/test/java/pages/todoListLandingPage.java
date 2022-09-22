@@ -90,7 +90,6 @@ public class todoListLandingPage {
 			break;
 		case "Clear completed": 	
 			driver.findElement(clearCompletedButton).click();
-			Thread.sleep(5000);
 			break;
 		default:throw new InvalidArgumentException("Invalid Button-Name Value Entered. Please Check. Accepted values are - Active, Completed, Clear completed");  
 		}  
@@ -119,7 +118,7 @@ public class todoListLandingPage {
 		String[] allValuesArr = allValues.split(",");
 		int toVerify = allValuesArr.length - completedValuesArr.length;
 		if (toVerify == 0){
-			driver.findElement(markAllAsCompletedButton).click(); //if the total number of COMPLETED items sand the total number 
+			driver.findElement(markAllAsCompletedButton).click(); //if the total number of COMPLETED items and the total number 
 		}														  //of items is same, then Select all checkbox is clicked
 		else{
 			for (int i = 0; i < completedValuesArr.length; i ++){
